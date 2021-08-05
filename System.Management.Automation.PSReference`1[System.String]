@@ -1,0 +1,33 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Thursday, August 5, 2021 4:23:20 PM
+   Source : c:\test1\
+     Dest : c:\test2\
+
+    Files : *.*
+	    
+ Exc Dirs : c:\test2\.git
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /R:10 /W:5 
+
+------------------------------------------------------------------------------
+
+	                   3	c:\test1\
+	  *EXTRA File 		       0	System.Management.Automation.PSReference`1[System.String]
+2021/08/05 16:23:20 ERROR 32 (0x00000020) Deleting Extra File c:\test2\System.Management.Automation.PSReference`1[System.String]
+The process cannot access the file because it is being used by another process.
+
+	    New File  		       0	c.txt100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         1
+   Files :         3         1         2         0         0         1
+   Bytes :        14         0        14         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Thursday, August 5, 2021 4:23:20 PM
+
